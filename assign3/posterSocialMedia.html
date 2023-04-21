@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- transform, gradient,max-width/min width,custoized-side-scroll,small chat app-->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      .main {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        background: linear-gradient(to left, #283048, #859398);
+      }
+      .rotate {
+        width: 50%;
+        height: 100%;
+        background-color: darkblue;
+        background: url("https://img.freepik.com/premium-photo/3d-rendering-bunch-square-logos-main-social-media-apps-orange-background_284880-215.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(45deg);
+        position: absolute;
+        left: -400px;
+        border-radius: 10px;
+        border: 2px solid white;
+      }
+      .track {
+        background: linear-gradient(to right, #283048, #859398);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-end;
+      }
+      .track > span {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-right: 5%;
+        transition: height 0.1s, width 0.1s;
+      }
+      .track > span:hover {
+        opacity: 0.9;
+        height: 95px;
+        width: 95px;
+      }
+      .up {
+        background: url("https://www.kindpng.com/picc/m/0-7964_thumbs-up-for-restore-transparent-background-facebook-messenger.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 0px 50px blue;
+      }
+      .down {
+        background: url("https://www.kindpng.com/picc/m/40-406125_thumbs-down-png-transparent-png.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 0px 50px chocolate;
+      }
+      .right {
+        height: 100%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+      }
+      .title,
+      .input {
+        width: 100%;
+        height: 60px;
+        background: linear-gradient(to left, #283048, #859398);
+      }
+      .title {
+        text-align: center;
+        line-height: 60px;
+        font-size: xx-large;
+        color: white;
+      }
+      .content {
+        background-color: rgb(26, 25, 25);
+        height: calc(100% - 120px);
+        overflow: hidden;
+        overflow-y: scroll;
+        padding: 5px;
+      }
+
+      .content::-webkit-scrollbar {
+        width: 10px;
+      }
+      .content::-webkit-scrollbar-track {
+        background-color: white;
+      }
+
+      .content ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: lawngreen;
+        border: 10px solid lawngreen;
+        background-clip: border-box;
+      }
+      .content::-webkit-scrollbar-thumb:hover {
+        background-color: lawngreen;
+        border-radius: 10px;
+      }
+
+      .input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .input > input {
+        font-size: larger;
+        padding: 10px;
+        width: 100%;
+        height: 90%;
+        background-color: gainsboro;
+        color: rgb(51, 51, 51);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 5px;
+      }
+      input:focus {
+        outline: none;
+      }
+      .content > div {
+        width: 100%;
+        margin-block: 15px;
+      }
+      .content > div > p {
+        max-width: 60%;
+        border-radius: 5px;
+        font-size: larger;
+        color: white;
+        padding: 5px;
+        box-shadow: 5px 5px 8px gray;
+      }
+      .p-1 {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .p-2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .p-1 > p {
+        background-color: cornflowerblue;
+      }
+      .p-2 > p {
+        background-color: rgb(68, 190, 68);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="rotate"></div>
+      <div class="track">
+        <span class="up"> </span>
+        <span class="down"></span>
+      </div>
+      <div class="right">
+        <div class="title">Is Social Media Boon or Bane</div>
+        <div class="content">
+          <div class="p-1"><p>Lorem,</p></div>
+          <div class="p-2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="p-1">
+            <p>Lorem, ipsum dolor sit amet</p>
+          </div>
+          <div class="p-2">
+            <p>Lorem, ipsum dolor sit</p>
+          </div>
+          <div class="p-1">
+            <p>
+              Lorem, ipsum dolor sit Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Nihil, repellendus soluta distinctio rem neque
+              provident eveniet? Nam sequi nesciunt vel.
+            </p>
+          </div>
+          <div class="p-2">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iusto
+              id error consequatur molestias eum cupiditate aspernatur
+              distinctio vero iure sed, unde voluptatibus fuga sapiente, culpa
+              dolorum vel officiis aliquid. Dolorum id consectetur voluptas
+              optio!
+            </p>
+          </div>
+          <div class="p-1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="p-2">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit, amet consectetur adipisicing elit. Quia sunt,
+              perferendis tempore quidem aperiam nostrum!
+            </p>
+          </div>
+          <div class="p-1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="p-2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="p-1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="p-2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="p-1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="p-2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="p-1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="p-2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="input">
+          <input type="text" class="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

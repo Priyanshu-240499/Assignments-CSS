@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day12</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: gainsboro;
+      }
+      nav {
+        background-color: gray;
+        width: 100%;
+        height: 80px;
+      }
+      nav > h1 {
+        color: white;
+        display: inline-block;
+        font-size: 2rem;
+        margin: 20px 150px 0px 150px;
+      }
+      nav > a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        margin: 20px 30px 0px 30px;
+      }
+      .food{
+        padding-block: 2%;
+        margin-block: 2%;
+      }
+      .food > h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-block:10px;
+        color: white;
+      }
+      .card{
+        width:25%;
+        display: inline-block;
+        padding: 5px;
+        margin-inline:3.75% ;
+        border-radius:5px;
+        box-shadow: 3px 3px 5px white;
+      }
+      .card-1{
+        background: linear-gradient(to right, #c31432, #240b36);
+      }
+      .card-2{
+        background: linear-gradient(to right, #f12711, #f5af19)
+      }
+      .card-3{
+        background: linear-gradient(to right, #373b44, #4286f4);
+      }
+      .card>p{
+        color: white;
+        line-height: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>FOOD-ADDA</h1>
+      <a href="#Ind">Indian</a>
+      <a href="#Itl">Italian</a>
+      <a href="#">Chinese </a>
+    </nav>
+    <main>
+      <section class="food" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364);" id="Ind">
+        <h1>The Indain Dhaba</h1>
+        <div class="card card-1">
+          <img
+            src="assets/ind-1.jpg"
+            alt="ind-1"
+            width="100%"
+            height="300px"
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+            corporis dicta quia cum obcaecati excepturi impedit neque vel, quasi
+            temporibus ad numquam nam provident. Odit culpa autem nihil atque
+            modi!
+          </p>
+        </div>
+        <div class="card card-2" >
+            <img
+              src="assets/ind-2.jpg"
+              alt="ind-1"
+              width="100%"
+              height="300px"
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+              corporis dicta quia cum obcaecati excepturi impedit neque vel, quasi
+              temporibus ad numquam nam provident. Odit culpa autem nihil atque
+              modi!
+            </p>
+          </div>
+          <div class="card card-3">
+            <img
+              src="assets/ind-3.jpg"
+              alt="ind-1"
+              width="100%"
+              height="300px"
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+              corporis dicta quia cum obcaecati excepturi impedit neque vel, quasi
+              temporibus ad numquam nam provident. Odit culpa autem nihil atque
+              modi!
+            </p>
+          </div>
+      </section>
+      <!-- ---------------------------------- -->
+      <section class="food" style="background: linear-gradient(to right, #8e0e00, #1f1c18);" id="Itl">
+        <h1>Italian Bistro</h1>
+        <div class="card card-1">
+          <img
+            src="assets/itl-1.jpg"
+            alt="ind-1"
+            width="100%"
+            height="300px"
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+            corporis dicta quia cum obcaecati excepturi impedit neque vel, quasi
+            temporibus ad numquam nam provident. Odit culpa autem nihil atque
+            modi!
+          </p>
+        </div>
+        <div class="card card-2" >
+            <img
+              src="assets/itl-2.jpg"
+              alt="ind-1"
+              width="100%"
+              height="300px"
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+              corporis dicta quia cum obcaecati excepturi impedit neque vel, quasi
+              temporibus ad numquam nam provident. Odit culpa autem nihil atque
+              modi!
+            </p>
+          </div>
+          <div class="card card-3">
+            <img
+              src="assets/itl-3.jpg"
+              alt="ind-1"
+              width="100%"
+              height="300px"
+            />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+              corporis dicta quia cum obcaecati excepturi impedit neque vel, quasi
+              temporibus ad numquam nam provident. Odit culpa autem nihil atque
+              modi!
+            </p>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>

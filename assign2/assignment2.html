@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <script defer src="./Calender.js"></script>
+    <link rel="stylesheet" href="./assignment2.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- background properties,ui practice,external animation package,use of calc,mirror effect,media queries -->
+</head>
+<body>
+    <div  class="main">
+        <div data-aos="fade-up" data-aos-duration="2000" class="container">
+            <section class="month-year">
+             <select class="select-month">
+                <option disabled selected>Select Month</option>
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+             </select>
+             <select class="select-year">
+                <option disabled selected>Select Year</option>
+                <option value="0">1999</option>
+                <option value="1">2000</option>
+                <option value="2">2001</option>
+                <option value="3">2002</option>
+                <option value="4">2003</option>
+                <option value="5">2004</option>
+                <option value="6">2005</option>
+                <option value="7">2006</option>
+                <option value="8">2007</option>
+                <option value="9">2008</option>
+                <option value="10">2009</option>
+                <option value="11">2010</option>
+                <option value="11">2011</option>
+                <option value="11">2012</option>
+                <option value="11">2013</option>
+                <option value="11">2014</option>
+                <option value="11">2015</option>
+                <option value="11">2016</option>
+                <option value="11">2017</option>
+                <option value="11">2018</option>
+                <option value="11">2019</option>
+                <option value="11">2020</option>
+                <option value="11">2021</option>
+                <option value="11">2022</option>
+                <option value="11">2023</option>
+             </select>
+            
+            </section>
+            <section class="calender">
+                <ul class="week">
+                    <li>sun</li>
+                    <li>mon</li>
+                    <li>tue</li>
+                    <li>wed</li>
+                    <li>thu</li>
+                    <li>fri</li>
+                    <li>sat</li>
+                </ul>
+                <ul class="day">
+                    <li class="days"></li>
+                    <li class="days"></li>
+                    <li class="days"></li>
+                    <li class="days"></li>
+                    <li class="days"></li>
+                    <li class="days"></li>
+                    <li class="days">1</li>
+                    <li class="days">2</li>
+                    <li class="days">3</li>
+                    <li class="days">4</li>
+                    <li class="days">5</li>
+                    <li class="days">6</li>
+                    <li class="days">7</li>
+                    <li class="days">8</li>
+                    <li class="days active">9</li>
+                    <li class="days">10</li>
+                    <li class="days">11</li>
+                    <li class="days">12</li>
+                    <li class="days">13</li>
+                    <li class="days">14</li>
+                    <li class="days">15</li>
+                    <li class="days">16</li>
+                    <li class="days">17</li>
+                    <li class="days">18</li>
+                    <li class="days">19</li>
+                    <li class="days">20</li>
+                    <li class="days">21</li>
+                    <li class="days">22</li>
+                    <li class="days">23</li>
+                    <li class="days">24</li>
+                    <li class="days">25</li>
+                    <li class="days">26</li>
+                    <li class="days">27</li>
+                    <li class="days">28</li>
+                    <li class="days">29</li>
+                    <li class="days">30</li>
+                    <li class="days">31</li>
+                </ul>
+            </section>
+            <form class="date">
+             <input type="number" placeholder="Enter Date" min="1" max="31" required class="EnterDate"/>
+             <input type="submit" class="submit" value="Enter"/>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
