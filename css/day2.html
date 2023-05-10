@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+      .container-1>div{
+        height: 200px;
+        width: 200px;
+      }
+      #p1 {
+        background-color: rgba(255, 0, 0, 0.3);
+      }
+      #p2 {
+        background-color: rgba(0, 255, 0, 0.3);
+      }
+      #p3 {
+        background-color: rgba(0, 0, 255, 0.3);
+      }
+      #p4 {background-color: hsl(120, 100%, 50%);} 
+      #p5 {background-color: hsl(120, 100%, 75%);}  
+      #p6 {background-color: hsl(120, 100%, 25%);}
+      #p7 {
+        background-color: rgba(255, 0, 0, 0.3);
+      }
+      #p8 {
+        background-color: rgba(0, 255, 0, 0.3);
+      }
+      #p9 {
+        background-color: rgba(0, 0, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container-1">
+        <h1>rgba</h1>
+        <div id="p1"></div>
+        <div id="p2"></div>
+        <div id="p3"></div>
+      </div>
+      <div class="container-1">
+        <h1>hsl</h1>
+        <div id="p4"></div>
+        <div id="p5"></div>
+        <div id="p6"></div>
+        <div class="container-1">
+            <h1>hex</h1>
+            <div id="p7"></div>
+            <div id="p8"></div>
+            <div id="p9"></div>
+    </div>
+  </body>
+</html>
